@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Faculty.master.cs" Inherits="MasterPageFaculty" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <style>
+      /* Style the header rectangle */
+      .header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+       .footer {
+        position: fixed; /* or absolute */
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        bottom:0;
+        width:100%;
+        height: 3px;
+        }
+      /* Style the buttons */
+
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <h1>WELCOME TO FLEX</h1>
+            <asp:LinkButton ID="LinkButton1" runat="server" BackColor="#00CC66" ForeColor="Black" OnClick="LinkButton1_Click">Home</asp:LinkButton>
+            &nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton2" runat="server" BackColor="#00CC66" ForeColor="Black" OnClick="LinkButton2_Click">My Courses</asp:LinkButton>
+            &nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton3" runat="server" BackColor="#00CC66" ForeColor="Black" OnClick="LinkButton3_Click">Attendance</asp:LinkButton>
+            &nbsp;&nbsp;&nbsp;<asp:LinkButton ID="LinkButton4" runat="server" BackColor="#00CC66" ForeColor="Black" OnClick="LinkButton4_Click">Marks Distribution</asp:LinkButton>
+            &nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton5" runat="server" BackColor="#00CC66" ForeColor="Black" OnClick="LinkButton5_Click">Evaluation</asp:LinkButton>
+            &nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton6" runat="server" BackColor="#00CC66" ForeColor="Black" OnClick="LinkButton6_Click">Grades</asp:LinkButton>
+             &nbsp; &nbsp;<asp:LinkButton ID="LinkButton8" runat="server" BackColor="#00CC66" ForeColor="Black" OnClick="LinkButton8_Click">Feedback</asp:LinkButton>
+&nbsp;
+&nbsp;<asp:LinkButton ID="LinkButton7" runat="server" BackColor="#00CC66" ForeColor="Black" OnClick="LinkButton7_Click">Sign Out</asp:LinkButton>
+        
+        &nbsp;
+        
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <div class="footer">
+            <h5>email: FastNuces@nu.edu.pk</h5>
+            <h5>Phone: 333-555-555</h5>
+        </div>
+        
+    <p>
+        &nbsp;</p>
+        
+    </form>
+    
+    </body>
+</html>
